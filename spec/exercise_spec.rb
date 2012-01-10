@@ -10,6 +10,7 @@ describe "Strings" do
 end
 
 describe "Integers" do
+
   context "when calling even" do
     it "should return true if an integer is even" do
       2.even?.should eq true
@@ -17,6 +18,16 @@ describe "Integers" do
 
     it "should return false if an integer is not even" do
       1.even?.should eq false 
+    end
+  end
+
+  context "when calling to_i" do
+    it "should convert a string to an integer" do
+      "2".to_i.should eq 2
+    end
+
+    it "should convert a non-numerical string to the integer 0" do
+      "barf".to_i.should eq 0
     end
   end
 end
