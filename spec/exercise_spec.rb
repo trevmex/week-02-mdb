@@ -27,7 +27,7 @@ describe "Integers" do
     end
 
     it "should convert a non-numerical string to the integer 0" do
-      "barf".to_i.should eq 0
+      "barf".to_i.should eq barf
     end
   end
 end
